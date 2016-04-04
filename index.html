@@ -8,44 +8,44 @@
 	
 	<body>	
 		<h1>Kitten Calculator</h1>
-		<div id="numberbox"><input type="text"></div>
+		<p id="parenHolder"><input id="equationBox" type="text" value="0" readonly></p>
 		
-		<table align="center">
+		<table id="calc" align="center">
 			<tr>
-				<td><button>(</button></td>
-				<td><button>)</button></td>
-				<td><button>%</button></td>
-				<td><button>AC</button></td>
+				<td class="openparen">(</td>
+				<td class="closeparen">)</td>
+				<td class="sym">%</td>
+				<td class="clear">AC</td>
 			</tr>
 			<tr>
-				<td><button>7</button></td>
-				<td><button>8</button></td>
-				<td><button>9</button></td>
-				<td><button>/</button></td>
+				<td class="num">7</td>
+				<td class="num">8</td>
+				<td class="num">9</td>
+				<td class="sym">/</td>
 			</tr>
 			<tr>
-				<td><button>4</button></td>
-				<td><button>5</button></td>
-				<td><button>6</button></td>
-				<td><button>*</button></td>
+				<td class="num">4</td>
+				<td class="num">5</td>
+				<td class="num">6</td>
+				<td class="sym">*</td>
 			</tr>
 			<tr>
-				<td><button>1</button></td>
-				<td><button>2</button></td>
-				<td><button>3</button></td>
-				<td><button>-</button></td>
+				<td class="num">1</td>
+				<td class="num">2</td>
+				<td class="num">3</td>
+				<td class="sym">-</td>
 			</tr>
 			<tr>
-				<td><button>0</button></td>
-				<td><button>.</button></td>
-				<td><button>=</button></td>
-				<td><button>+</button></td>
+				<td class="num">0</td>
+				<td class="num">.</td>
+				<td class="equal">=</td>
+				<td class="sym">+</td>
+			</tr>
+			<tr>
+				<td colspan="4" class="convert">convert to puppies</td>
 			</tr>
 		</table>
 
-		<div id="convert"><button>convert to puppies</button></div>
-
-		<script src="jquery-1.12.0.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
 	</body>
 
